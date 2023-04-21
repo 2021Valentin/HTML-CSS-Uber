@@ -1,32 +1,37 @@
 @charset "UTF-8";
-/* line 8, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
+/* line 1, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
 * {
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 10, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-header {
+/* line 1, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* header {
   position: relative;
   height: 50px;
 }
 
-/* line 13, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-nav {
+/* line 4, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* nav {
   background: #212121;
   height: 50px;
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 3;
 }
 
-/* line 20, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-a {
+/* line 11, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .hamburger {
+  display: none;
+}
+
+/* line 14, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* a {
   color: #fff;
   text-decoration: none;
 }
 
-/* line 24, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.menu {
+/* line 18, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .menu {
   display: flex;
   justify-content: space-between;
   padding: 10px 80px;
@@ -34,8 +39,8 @@ a {
   list-style-type: none;
 }
 
-/* line 30, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.menu_link {
+/* line 24, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .menu_link {
   font-weight: 300;
   font-size: 15px;
   color: #FFFFFF;
@@ -43,8 +48,8 @@ a {
   position: relative;
 }
 
-/* line 36, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.menu_link::after {
+/* line 30, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .menu_link::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -57,32 +62,27 @@ a {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
 
-/* line 48, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.menu_link:hover::after {
+/* line 42, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .menu_link:hover::after {
   width: 100%;
   left: 0;
 }
 
-/* line 51, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.menu_item {
+/* line 45, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .menu_item {
   border-right: 2px dotted black;
-  padding-right: 23px;
+  padding-right: 40px;
   transition: 0.3 all;
   position: relative;
 }
 
-/* line 56, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.menu_item:last-child {
+/* line 50, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .menu_item:last-child {
   border-right: none;
 }
 
-/* line 58, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.container {
-  width: 1150px;
-}
-
-/* line 60, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.subheader {
+/* line 53, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .subheader {
   background: rgba(0, 0, 0, 0.6);
   top: 50px;
   height: 85px;
@@ -90,49 +90,47 @@ a {
   width: 100%;
 }
 
-/* line 66, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.subheader .uber_logo {
+/* line 59, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .uber_logo {
   margin-top: 18px;
 }
 
-/* line 68, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.subheader .logo_descr {
+/* line 61, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .logo_descr {
   color: #FFFFFF;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-weight: 100;
   font-size: 13px;
 }
 
-/* line 73, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.number {
-  font-weight: 400;
-  width: 195px;
-  font-size: 22px;
-  margin-top: 22px;
-  text-align: right;
-}
-
-/* line 79, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.number .number_descr {
+/* line 66, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .phone_descr {
   font-weight: 300;
   font-size: 12px;
-  line-height: 14px;
   color: #FFFFFF;
-}
-
-/* line 84, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.button {
-  margin-left: 18px;
+  text-align: right;
   margin-top: 19px;
 }
 
-/* line 87, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.btn {
+/* line 72, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .subheader_phone {
+  display: block;
+  font-weight: 400;
+  font-size: 22px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+/* line 79, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .subheader_btn {
+  margin-top: 22px;
   width: 172px;
   height: 46px;
   text-transform: uppercase;
   background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
   box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+  border: none;
   border-radius: 4px;
   color: #FFFFFF;
   padding: 8px 5px;
@@ -141,21 +139,21 @@ a {
   font-size: 14px;
 }
 
-/* line 4, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.btn:hover {
+/* line 2, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_mixins.sass */
+* .subheader_btn:hover {
   background: none;
   background-color: #1EACC7;
   box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
 }
 
-/* line 100, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.promo {
-  height: 800px;
+/* line 94, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .promo {
+  min-height: 800px;
   background: url("../img/uber_bg.jpg") center center/cover no-repeat;
 }
 
-/* line 103, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.promo .promo_header {
+/* line 97, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .promo_header {
   margin-top: 118px;
   font-weight: 900;
   font-size: 60px;
@@ -165,8 +163,8 @@ a {
   margin-bottom: 0;
 }
 
-/* line 111, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.promo .promo_subheader {
+/* line 105, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .promo_subheader {
   font-weight: 700;
   font-size: 36px;
   color: #FFFFFF;
@@ -175,8 +173,8 @@ a {
   margin-bottom: 0;
 }
 
-/* line 118, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.promo .promo_descr {
+/* line 112, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .promo_descr {
   margin-top: 16px;
   font-weight: 400;
   font-size: 18px;
@@ -185,8 +183,8 @@ a {
   color: #FFFFFF;
 }
 
-/* line 125, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.promo .promo_btn {
+/* line 119, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .promo_btn {
   display: block;
   margin: 0 auto;
   margin-top: 115px;
@@ -203,21 +201,22 @@ a {
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
 }
 
-/* line 4, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.promo .promo_btn:hover {
+/* line 2, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_mixins.sass */
+* .promo_btn:hover {
   background: none;
   background-color: #1EACC7;
   box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
 }
 
-/* line 141, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.reasons {
+/* line 135, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .reasons {
   min-height: 845px;
   padding: 14px 0 64px 0;
 }
 
-/* line 144, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.label {
+/* line 138, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .label {
+  position: relative;
   background: #000000;
   margin: 0 auto;
   padding: 5px 5px 5px 6px;
@@ -229,54 +228,120 @@ a {
   font-size: 11px;
   color: #FFFFFF;
   mix-blend-mode: normal;
+  z-index: 2;
 }
 
-/* line 156, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.label_white {
+/* line 152, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .label_white {
   background-color: #fff;
   color: #070716;
 }
 
-/* line 159, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.title {
+/* line 155, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .title {
+  position: relative;
   margin-top: 32px;
   font-weight: 700;
   font-size: 38px;
   color: #222222;
   text-align: center;
   text-transform: uppercase;
+  z-index: 2;
 }
 
-/* line 166, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.title_white {
+/* line 164, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .title_white {
   color: #FFFFFF;
   margin-bottom: 0;
 }
 
-/* line 170, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.subtitle {
+/* line 168, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .subtitle {
+  position: relative;
+  z-index: 2;
   color: #222222;
   font-weight: 400;
   font-size: 17px;
   text-align: center;
 }
 
-/* line 175, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.subtitle_white {
+/* line 175, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .subtitle_white {
   color: #FFFFFF;
 }
 
-/* line 178, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.item {
+/* line 178, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .item {
   display: flex;
   margin-top: 26px;
   justify-content: center;
   align-items: center;
-  height: 150px;
 }
 
-/* line 184, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.item .elips {
+/* line 183, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .item_img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 186, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .item_text {
+  width: 371px;
+}
+
+/* line 188, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .item_text_2 {
+  width: 341px;
+}
+
+/* line 190, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .item_text_3 {
+  width: 371px;
+}
+
+/* line 192, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .item_text_4 {
+  width: 339px;
+}
+
+/* line 194, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .item_text_5 {
+  width: 372px;
+}
+
+/* line 196, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .item_text_6 {
+  width: 339px;
+}
+
+/* line 198, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .item_text_7 {
+  width: 371px;
+}
+
+/* line 200, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .item_text_8 {
+  width: 341px;
+}
+
+/* line 202, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .item_header {
+  color: #1EACC7;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+}
+
+/* line 207, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .item_descr {
+  color: #202020;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 21px;
+}
+
+/* line 212, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .elips {
   background-color: #1EACC7;
   border-radius: 100%;
   margin-right: 26px;
@@ -287,78 +352,15 @@ a {
   align-items: center;
 }
 
-/* line 193, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.item .item_img {
-  display: block;
-  margin: 0 auto;
-}
-
-/* line 196, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.item .item_text {
-  width: 371px;
-  height: 150px;
-}
-
-/* line 199, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.item .item_text_2 {
-  width: 341px;
-}
-
-/* line 201, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.item .item_text_3 {
-  width: 371px;
-}
-
-/* line 203, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.item .item_text_4 {
-  width: 339px;
-}
-
-/* line 205, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.item .item_text_5 {
-  width: 372px;
-}
-
-/* line 207, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.item .item_text_6 {
-  width: 339px;
-}
-
-/* line 209, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.item .item_text_7 {
-  width: 371px;
-}
-
-/* line 211, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.item .item_text_8 {
-  width: 341px;
-}
-
-/* line 213, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.item .item_header {
-  color: #1EACC7;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 21px;
-}
-
-/* line 218, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.item .item_descr {
-  color: #202020;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 21px;
-}
-
-/* line 224, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.mobile {
+/* line 222, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .mobile {
   min-height: 865px;
   padding: 46px 0 85px 0;
   background: url("../img/mobile_bg.jpg") center center/cover no-repeat;
 }
 
-/* line 228, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.mobile_item {
+/* line 226, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .mobile_item {
   position: relative;
   padding-top: 85px;
   margin-top: 30px;
@@ -367,38 +369,38 @@ a {
   height: 280px;
 }
 
-/* line 235, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.mobile_item_1 {
+/* line 233, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .mobile_item_1 {
   background: url("../icons/Section 3/Card 1.jpg") center center/cover no-repeat;
 }
 
-/* line 237, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.mobile_item_2 {
+/* line 235, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .mobile_item_2 {
   background: url("../icons/Section 3/Card 2.jpg") center center/cover no-repeat;
 }
 
-/* line 239, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.mobile_item_3 {
+/* line 237, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .mobile_item_3 {
   background: url("../icons/Section 3/Card 3.jpg") center center/cover no-repeat;
 }
 
-/* line 241, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.mobile_item_4 {
+/* line 239, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .mobile_item_4 {
   background: url("../icons/Section 3/Card 4.jpg") center center/cover no-repeat;
 }
 
-/* line 243, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.mobile_item_5 {
+/* line 241, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .mobile_item_5 {
   background: url("../icons/Section 3/Card 5.jpg") center center/cover no-repeat;
 }
 
-/* line 245, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.mobile_item_6 {
+/* line 243, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .mobile_item_6 {
   background: url("../icons/Section 3/Card 6.jpg") center center/cover no-repeat;
 }
 
-/* line 247, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.mobile_item_subtitle {
+/* line 245, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .mobile_item_subtitle {
   font-weight: 400;
   font-size: 24px;
   color: #FFFFFF;
@@ -406,8 +408,8 @@ a {
   text-transform: uppercase;
 }
 
-/* line 253, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.mobile_item_plus {
+/* line 251, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .mobile_item_plus {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -423,8 +425,8 @@ a {
   cursor: pointer;
 }
 
-/* line 267, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.mobile_item_plus::before {
+/* line 265, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .mobile_item_plus::before {
   content: '';
   display: block;
   width: 14px;
@@ -433,8 +435,8 @@ a {
   transition: 0.5s all;
 }
 
-/* line 274, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.mobile_item_plus::after {
+/* line 272, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .mobile_item_plus::after {
   content: '';
   display: block;
   position: absolute;
@@ -446,89 +448,85 @@ a {
   transition: 0.3s all;
 }
 
-/* line 285, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.mobile_item_plus:hover::before, .mobile_item_plus:hover::after {
+/* line 283, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .mobile_item_plus:hover::before, * .mobile_item_plus:hover::after {
   background-color: #FF5656;
 }
 
-/* line 288, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.uberX {
-  min-height: 890px;
-}
-
-/* line 290, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.uberX_BG_black {
-  padding-top: 50px;
-  background-color: #070716;
-  height: 499px;
-}
-
-/* line 294, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.uberX_BG_img {
+/* line 286, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .choice {
   position: relative;
-  background: url("../img/background.jpg") center center/cover no-repeat;
-  height: 391px;
+  min-height: 895px;
+  padding: 57px 0 138px 0;
+  background: url("../img/mobile_bg.jpg") center center/cover no-repeat;
 }
 
-/* line 298, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.uberX .uber_car {
-  position: absolute;
-  top: -180px;
+/* line 291, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .choice_img {
+  position: relative;
+  display: block;
+  margin: 141px auto -84px auto;
+  z-index: 2;
 }
 
-/* line 301, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.uberX .uber_car_img {
-  vertical-align: middle;
-  border-style: none;
-}
-
-/* line 304, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.uberX .uber_car_descr {
+/* line 296, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .choice_descr {
   text-align: center;
   color: #222222;
-  font-weight: 300;
   font-size: 17px;
-  margin-top: 210px;
+  font-weight: 300;
+  line-height: 24px;
 }
 
-/* line 311, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.require {
+/* line 302, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .choice .black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 499px;
+  width: 100%;
+  background-color: #070716;
+  z-index: 1;
+}
+
+/* line 311, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .require {
   padding: 60px 0 87px 0;
 }
 
-/* line 313, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.require_block {
+/* line 313, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .require_block {
   margin: 33px 0;
 }
 
-/* line 315, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.require_block_nmb {
+/* line 315, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .require_block_nmb {
   margin-bottom: 0;
 }
 
-/* line 317, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.require_title {
+/* line 317, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .require_title {
   font-weight: 400;
   font-size: 22px;
   color: #1CA8C3;
 }
 
-/* line 321, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.require_descr {
+/* line 321, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .require_descr {
   font-weight: 300;
   font-size: 17px;
   color: #1CA8C3;
 }
 
-/* line 325, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.require_list {
+/* line 325, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .require_list {
   list-style-type: none;
   padding-left: 50px;
   margin: 20px 0;
 }
 
-/* line 329, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.require_list li {
+/* line 329, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .require_list li {
   position: relative;
   font-weight: 300;
   color: #222222;
@@ -537,8 +535,8 @@ a {
   margin-bottom: 7px;
 }
 
-/* line 336, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.require_list li::before {
+/* line 336, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .require_list li::before {
   content: '';
   display: block;
   position: absolute;
@@ -549,25 +547,25 @@ a {
   background: url("../icons/Section 5/check_blue 1.png") center center/cover no-repeat;
 }
 
-/* line 346, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.require .warning .require_title {
+/* line 346, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .require .warning .require_title {
   color: #FF5656;
 }
 
-/* line 350, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.require .warning .require_list li::before {
+/* line 350, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .require .warning .require_list li::before {
   background: url("../icons/Section 5/check_red 1.png") center center/cover no-repeat;
 }
 
-/* line 352, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.cities {
+/* line 352, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .cities {
   background: url("../img/world_bg.jpg") center center/cover no-repeat;
   min-height: 715px;
   padding: 48px 0 22px 0;
 }
 
-/* line 356, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.cities .all_cities {
+/* line 356, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .cities .all_cities {
   display: block;
   text-align: center;
   margin-top: 456px;
@@ -575,56 +573,56 @@ a {
   text-transform: uppercase;
 }
 
-/* line 362, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.cities .all_cities:hover {
+/* line 362, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .cities .all_cities:hover {
   opacity: 0.8;
 }
 
-/* line 365, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-footer {
+/* line 365, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* footer {
   min-height: 155px;
   padding: 11px 21px 44px 24px;
 }
 
-/* line 369, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-footer a:hover {
+/* line 369, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* footer a:hover {
   text-decoration: none;
 }
 
-/* line 373, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.footer_divider {
+/* line 373, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .footer_divider {
   width: 301px;
   height: 7px;
   background: #1FBAD6;
   margin: 0 auto;
 }
 
-/* line 378, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.footer_wrapper {
+/* line 378, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .footer_wrapper {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   padding-top: 29px;
 }
 
-/* line 383, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.footer_wrapper > div {
+/* line 383, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .footer_wrapper > div {
   width: 33%;
 }
 
-/* line 385, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.footer_wrapper > div:nth-child(3) {
+/* line 385, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .footer_wrapper > div:nth-child(3) {
   display: flex;
   justify-content: flex-end;
 }
 
-/* line 389, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.footer_social_wrapper {
+/* line 389, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .footer_social_wrapper {
   display: flex;
 }
 
-/* line 392, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.footer_social_item {
+/* line 392, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .footer_social_item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -636,59 +634,59 @@ footer a:hover {
   cursor: pointer;
 }
 
-/* line 402, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.footer_social_item i {
+/* line 402, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .footer_social_item i {
   color: #fff;
 }
 
-/* line 405, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.footer_links_wrapper {
+/* line 405, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .footer_links_wrapper {
   width: 390px;
   margin: 0 auto;
 }
 
-/* line 408, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.footer_links_main {
+/* line 408, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .footer_links_main {
   display: flex;
   justify-content: space-between;
   padding: 0 10px;
 }
 
-/* line 412, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.footer_links_main a {
+/* line 412, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .footer_links_main a {
   font-weight: 300;
   font-size: 15px;
   color: #070716;
   text-transform: uppercase;
 }
 
-/* line 417, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.footer_links_main a:hover {
+/* line 417, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .footer_links_main a:hover {
   opacity: 0.7;
 }
 
-/* line 419, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.footer_links_sub {
+/* line 419, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .footer_links_sub {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 }
 
-/* line 423, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.footer_links_sub a {
+/* line 423, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .footer_links_sub a {
   font-weight: 300;
   font-size: 11px;
   color: #999999;
   text-transform: uppercase;
 }
 
-/* line 428, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.footer_links_sub a:hover {
+/* line 428, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .footer_links_sub a:hover {
   opacity: 0.7;
 }
 
-/* line 430, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.footer_links_lang {
+/* line 430, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .footer_links_lang {
   display: block;
   margin: 0 auto;
   color: #1FBAD6;
@@ -699,14 +697,604 @@ footer a:hover {
   margin-top: 19px;
 }
 
-/* line 439, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.footer_links_lang:hover {
+/* line 439, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .footer_links_lang:hover {
   opacity: 0.6;
 }
 
-/* line 442, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/style.sass */
-.footer_mobile_link {
+/* line 442, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .footer_mobile_link {
   margin-left: 8px;
+}
+
+/* line 444, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_general.sass */
+* .xs-visible {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  /* line 3, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .menu_item {
+    padding-right: 20px;
+  }
+  /* line 5, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .menu_link {
+    font-size: 13px;
+  }
+  /* line 8, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .promo_header {
+    font-size: 50px;
+  }
+  /* line 10, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .item {
+    align-items: flex-start;
+  }
+  /* line 12, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .item_text {
+    width: 301px;
+  }
+  /* line 14, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .item_text_2 {
+    width: 301px;
+  }
+  /* line 16, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .item_text_3 {
+    width: 301px;
+  }
+  /* line 18, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .item_text_4 {
+    width: 301px;
+  }
+  /* line 20, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .item_text_5 {
+    width: 301px;
+  }
+  /* line 22, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .item_text_6 {
+    width: 301px;
+  }
+  /* line 24, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .item_text_7 {
+    width: 301px;
+  }
+  /* line 26, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .item_text_8 {
+    width: 301px;
+  }
+  /* line 28, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .mobile_item {
+    width: 300px;
+  }
+  /* line 31, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .footer_wrapper > div {
+    width: 50%;
+  }
+  /* line 33, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .footer:nth-child(1) {
+    width: 25%;
+  }
+  /* line 35, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .footer:nth-child(3) {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  /* line 39, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .footer_mobile {
+    display: flex;
+  }
+  /* line 41, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .footer_mobile img {
+    width: 100%;
+  }
+  /* line 43, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .footer_mobile_link {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 48, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .menu_item {
+    padding-right: 10px;
+  }
+  /* line 50, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .menu_link {
+    font-size: 10px;
+  }
+  /* line 52, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .mobile_item {
+    width: 225px;
+  }
+  /* line 54, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .choice_img {
+    width: 100%;
+  }
+  /* line 57, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .logo_img {
+    width: 100%;
+  }
+  /* line 59, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .logo_descr {
+    font-size: 11px;
+  }
+  /* line 62, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .subheader_phone {
+    font-size: 20px;
+  }
+  /* line 64, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .button {
+    margin-top: 21px;
+  }
+  /* line 66, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .btn {
+    width: 146px;
+    height: 40px;
+  }
+  /* line 70, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .promo_header {
+    font-size: 40px;
+  }
+  /* line 72, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .promo_subheader {
+    font-size: 30px;
+    margin-top: 15px;
+  }
+  /* line 75, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .promo_descr {
+    margin-top: 40px;
+  }
+  /* line 77, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .item {
+    align-items: center;
+    flex-direction: column;
+  }
+  /* line 80, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .item_text {
+    margin-top: 20px;
+    width: 301px;
+  }
+  /* line 83, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .item_text_2 {
+    margin-top: 20px;
+    width: 301px;
+  }
+  /* line 86, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .item_text_3 {
+    margin-top: 20px;
+    width: 301px;
+  }
+  /* line 89, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .item_text_4 {
+    margin-top: 20px;
+    width: 301px;
+  }
+  /* line 92, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .item_text_5 {
+    margin-top: 20px;
+    width: 301px;
+  }
+  /* line 95, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .item_text_6 {
+    margin-top: 20px;
+    width: 301px;
+  }
+  /* line 98, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .item_text_7 {
+    margin-top: 20px;
+    width: 301px;
+  }
+  /* line 101, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .item_text_8 {
+    margin-top: 20px;
+    width: 301px;
+  }
+  /* line 105, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .footer_wrapper {
+    flex-wrap: wrap;
+  }
+  /* line 107, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .footer_wrapper > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  /* line 112, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .footer_wrapper > div:nth-child(1) {
+    width: 100%;
+  }
+  /* line 114, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .footer_wrapper > div:nth-child(3) {
+    width: 100%;
+    justify-content: center;
+  }
+  /* line 117, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .footer_links {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 120, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .menu {
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    padding: 20px 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.6s all;
+  }
+  /* line 132, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .menu_active {
+    left: 0;
+  }
+  /* line 134, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .menu_item {
+    padding-right: 0;
+    border: none;
+    margin: 10px 0;
+  }
+  /* line 138, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .menu_link {
+    font-size: 20px;
+  }
+  /* line 140, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .hamburger {
+    display: block;
+    position: absolute;
+    right: 0px;
+    margin-right: 10px;
+    top: 34%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 17px;
+  }
+  /* line 149, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .hamburger span {
+    display: block;
+    height: 1.5px;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 4px;
+    transition: 0.5s all;
+  }
+  /* line 156, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .hamburger_active {
+    margin-top: 7px;
+  }
+  /* line 158, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .hamburger_active span {
+    margin-bottom: -2px;
+  }
+  /* line 160, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .hamburger_active span:nth-child(1) {
+    transform: rotate(-45deg);
+  }
+  /* line 162, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  /* line 164, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .hamburger_active span:nth-child(3) {
+    transform: rotate(45deg);
+  }
+  /* line 166, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .xs-hidden {
+    display: none;
+  }
+  /* line 168, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .xs-visible {
+    display: block;
+  }
+  /* line 171, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .subheader_phone {
+    display: block;
+    margin-top: 6px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    text-tranform: uppercase;
+    text-align: center;
+  }
+  /* line 179, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .subheader_btn {
+    margin-top: 10px;
+    display: block;
+    width: 200px;
+    height: 40px;
+    border-radius: 8px;
+    margin: 0 auto;
+  }
+  /* line 187, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .promo_header {
+    font-size: 35px;
+  }
+  /* line 189, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .mobile_item {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 320px;
+  }
+  /* line 193, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .title {
+    font-size: 30px;
+  }
+  /* line 195, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .choice {
+    min-height: 393px;
+    background: none;
+    background-color: #070716;
+  }
+  /* line 199, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .choice_img {
+    margin-top: 55px;
+    margin-bottom: -50px;
+  }
+  /* line 202, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .choice_descr {
+    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 207, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * nav {
+    height: 32px;
+  }
+  /* line 209, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * header {
+    height: 32px;
+  }
+  /* line 211, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .menu_active {
+    width: 83%;
+  }
+  /* line 213, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .menu_link {
+    display: block;
+    font-size: 18px;
+  }
+  /* line 216, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .menu_item {
+    width: 100%;
+    text-align: center;
+    padding: 4px 0;
+  }
+  /* line 220, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .logo_descr {
+    display: none;
+  }
+  /* line 222, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .uber_logo {
+    margin-top: 15px;
+  }
+  /* line 224, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .subheader {
+    height: 60px;
+    top: 32px;
+  }
+  /* line 227, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .subheader_phone {
+    margin-top: 11px;
+    display: block;
+    margin-top: 6px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-tranform: uppercase;
+    text-align: center;
+  }
+  /* line 236, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .subheader_btn {
+    margin: 0 auto;
+    margin-top: 6px;
+    display: block;
+    width: 110px;
+    height: 22px;
+    padding: 0 0;
+    border-radius: 4px;
+    font-size: 10px;
+  }
+  /* line 245, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .promo {
+    min-height: 400px;
+    padding: 101px 0 34px 0;
+  }
+  /* line 248, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .promo_header {
+    padding-left: 28px;
+    padding-right: 24px;
+    font-size: 30px;
+    margin: 0;
+  }
+  /* line 253, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .promo_subheader {
+    font-size: 20px;
+  }
+  /* line 255, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .promo_descr {
+    display: none;
+  }
+  /* line 257, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .promo_btn {
+    margin-top: 73px;
+    font-size: 16px;
+    width: 195px;
+    height: 50px;
+    border-radius: 8px;
+  }
+  /* line 263, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .mobile_item {
+    width: 300px;
+  }
+  /* line 265, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .reasons {
+    padding: 20px 0 38px 0;
+  }
+  /* line 267, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .title {
+    margin-top: 16px;
+    font-size: 16px;
+  }
+  /* line 270, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .item {
+    margin-top: 24px;
+  }
+  /* line 272, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .item_text {
+    width: 100%;
+  }
+  /* line 274, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .item_header {
+    font-size: 16px;
+  }
+  /* line 276, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .elips {
+    width: 100px;
+    height: 100px;
+    margin-right: 0;
+  }
+  /* line 281, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .hamburger span {
+    height: 2px;
+    margin-bottom: 2px;
+  }
+  /* line 284, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .hamburger_active {
+    margin-top: 0;
+    width: 25px;
+  }
+  /* line 288, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .hamburger_active span:nth-child(1) {
+    transform: translateY(4px) rotate(-45deg);
+  }
+  /* line 290, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  /* line 292, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .hamburger_active span:nth-child(3) {
+    transform: rotate(45deg);
+  }
+  /* line 294, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .choice {
+    min-height: 393px;
+    padding: 26px 0 31px 0;
+  }
+  /* line 297, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .choice .black {
+    display: none;
+  }
+  /* line 299, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .choice .hidden-320 {
+    display: none;
+  }
+  /* line 301, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .choice .hidden-320 {
+    display: none;
+  }
+  /* line 303, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .choice_descr {
+    margin-top: 23px;
+    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 24px;
+  }
+  /* line 309, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .choice_img {
+    margin-top: 35px;
+    margin-bottom: 0;
+  }
+  /* line 312, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .require {
+    padding: 24px 0 30px 0;
+  }
+  /* line 314, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .require_block {
+    margin: 0;
+    margin-top: 30px;
+  }
+  /* line 317, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .require_title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  /* line 321, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .require_list li {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  /* line 324, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .require_list li::before {
+    top: -3px;
+  }
+  /* line 326, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .require_descr {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  /* line 329, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .cities {
+    padding: 26px 0 30px 0;
+    min-height: 360px;
+  }
+  /* line 332, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .cities .subtitle_white {
+    font-size: 14px;
+    margin-top: 11px;
+  }
+  /* line 335, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * footer {
+    padding: 24px 5px 29px 5px;
+  }
+  /* line 338, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .footer_links {
+    margin: 0;
+    width: 285px;
+  }
+  /* line 341, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .footer_links_main {
+    font-size: 14px;
+  }
+  /* line 343, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .footer_links_sub {
+    font-size: 11px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /* line 347, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .footer_links_sub a {
+    margin: 0 7px;
+  }
+  /* line 349, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .footer_divider {
+    width: 280px;
+  }
+  /* line 352, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .footer_wrapper > div:nth-child(1) {
+    order: 2;
+  }
+  /* line 354, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .footer_wrapper > div:nth-child(2) {
+    order: 1;
+  }
+  /* line 356, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .footer_wrapper > div:nth-child(3) {
+    order: 3;
+  }
+  /* line 358, C:/Users/Admin/Desktop/Новая папка/Work/Projects. HTML + CSS/Project 1. Uber/src/sass/_media.sass */
+  * .footer_mobile_link {
+    margin-left: 5px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
